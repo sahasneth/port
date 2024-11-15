@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cae52c604b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header"> 
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemrnu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="headre-text">
+            <h1>Hi,I'm<span> Sahas Nethsara </span><br> Welcome to my portfolio. </h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+                <img src="FB.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Sahas Nethsara, a 20-year-old youth living in Sri Lanka.
+                    I have completed my O/L education from Vidyaloka College Galle and completed my A/L's from Richmond College Galle. 
+                    I'm an undergraduate in Cyber Security at SLTC Research University. 
+                    I stay up-to-date with the latest in cybersecurity and enjoy tech blogs.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Malware Analysis</span><br>Examining malicious software to understand its behavior and impact.</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Cyber Threat Intelligence (CTI)</span><br>Collecting and analyzing information to understand and mitigate threats.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>G.C.E. Ordinary level</span><br>9A</li>
+                            <li><span>G.C.E. Advanced level</span><br>2C,1S</li>
+                            <li><span>Bsc(Hons) Cyber Security</span><br>Undergraduate at Sri Lanka Technological Campus</li>
+                        </ul>
+                    </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+<!-- ------------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Intelligence Collection & Analysis</h2>
+                <p>Gathering and analyzing data to identify emerging threats and vulnerabilities.</p>
+                <a href="#">Learn more</a>    
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket"></i>
+                <h2>Web Design</h2>
+                <p>Creating responsive and user-friendly websites that elevate your Online presence.</p>
+                <a href="#">Learn more</a> 
+            </div>
+            <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h2>Incident Response</h2>
+                <p>Assisting during cyberattacks by providing intelligence and helping manage the situation to minimize damage.</p>
+                <a href="#">Learn more</a> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------portfolio------------ -->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="1.png">
+                <div class="layer">
+                    <h3>Web Design</h3>
+                    <p>Created a personal blog site using HTML,CSS, and Java Script, featuring a clean design, mobile responsive, and user-friendly navigation.</Script></p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="3.png">
+                <div class="layer">
+                    <h3>Incident Response</h3>
+                    <p>Assisted in responding to a simulated phising attack as part of a cybersecurity course, identifying the Threat and helping to implement basic mitigation strategies.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="2.png">
+                <div class="layer">
+                    <h3>Intelligence Collection and Analysis</h3>
+                    <p>Conducted a research project on social media trends to identify emerging topics, compiling a report that helped inform content strategy for a small business.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------contact-------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's work together</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sahasnethsara321@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 076 128 6079 </p>
+                <div class="social-icons">
+                   <a href="https://web.facebook.com/profile.php?id=100078461065866"><i class="fa-brands fa-facebook"></i></a> 
+                   <a href="https://www.instagram.com/sahas_nethsara/"><i class="fa-brands fa-instagram"></i></a> 
+                   <a href="https://www.linkedin.com/in/sahas-nethsara-144928322/?fbclid=IwY2xjawGkYpVleHRuA2FlbQIxMAABHW-hUtwAx4q4E137T1V5IpBkFOTAw36GdSD_57fAvzSqKtGMKxTrN54lHg_aem_KoVJ6TWNPfk0MwUdMYSCyg"><i class="fa-brands fa-linkedin"></i></a> 
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Enter Your Name"required>
+                  <input type="email" name="Email" placeholder="enter Your Email"required>
+                   <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                   <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        
+        </div>
+    </div>
+
+ </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemrnu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxi-rtCiYiVsOfv7Fv5jWgyXWq91AxAJPJCxRAmi3_8cNZso4Kqa3foy1ZHTpD9PfDd/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
